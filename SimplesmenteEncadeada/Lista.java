@@ -89,4 +89,36 @@ public class Lista {
         }
     }
 
+    public String pesquisarAluno (int matriculaVari) {
+        No atual = this.primeiro;
+
+        if (isEmpty()) {
+            return "Lista vazia";
+        }
+
+        while (atual != null) {
+            if (atual.getAluno().getMatricula() == matriculaVari) {
+                return atual.getAluno().getNome() + " encontrado";
+            } else {
+                atual = atual.getProximo();
+            }
+        }
+        return "Aluno não encontrado";
+    }
+
+    public String exibir () {
+        StringBuilder sb = new StringBuilder();
+        No atual = this.primeiro;
+
+        if (isEmpty()) {
+            return "Lista vazia";
+        }
+
+        while (atual != null) {
+            sb.append(atual.getAluno().getNome()).append(" ").append(atual.getAluno().getMatricula()).append("\n");
+            atual = atual.getProximo();
+        }
+        return sb.toString();
+    }
+
 }// classe
