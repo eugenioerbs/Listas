@@ -25,4 +25,9 @@ public class Aluno {
         return matricula;
     }
 
+    @Override     // para nos casos onde eu trabalhar com uma classe genérica
+    public String toString() {
+        return this.getNome();
+    }
+
 }
