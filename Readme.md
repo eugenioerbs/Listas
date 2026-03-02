@@ -1,0 +1,1 @@
+Repositório vinculado com o Git para armazenar exercícios, relembrar estruturas de dados praticar comandos git!
