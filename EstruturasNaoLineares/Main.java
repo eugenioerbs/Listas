@@ -20,6 +20,8 @@ public class Main {
         ArvoreBinaria<Aluno> ar = new ArvoreBinaria<>();
         ar.setRaiz(e);
 
-        System.out.println(ar.preOrdem());
+        
+
+        System.out.println(ar.encontrarNo(a).getInfo());
     }
 }
